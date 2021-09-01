@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml' >
+<head>
+<title>enrollments</title>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+<style type='text/css'>
+body {
+    font-family: 'Segoe UI', 'Lucida sans', Dialog;
+    font-size: 13px;
+    color: #444;
+    margin: 10px;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    caption-side: top;
+    width: auto;
+    margin: 10px 15px 5px 0;
+}
+
+
+.bordered td, .bordered th {
+   background-color: #fafafa;
+   border: 1px solid #D5D5D5;
+   padding: 3px 3px 3px 3px;
+   white-space:pre-wrap!important;
+}
+
+.bordered th {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 3px 3px 3px 3px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.section-header h2 {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: normal;
+    border-top: solid 1px #D5D5D5;
+    border-bottom: solid 1px #D5D5D5;
+    width: 95%;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    color: #4d82b8;
+}
+.section-header div {
+    font-size: 70%;
+    padding-left: 5px;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: #044282;
+  text-decoration: none;
+}
+
+th > a {
+    color:#858585;
+}
+
+.lg {
+    font-size: 110%;
+}
+
+h1 {
+    font-family: Verdana,Arial,Helvetica;
+    font-weight: normal;
+    color: #4d82b8;
+    margin: 20px 0 10px 0;
+}
+
+</style>
+</head>
+
+<body>
+<div class='svg-container'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' text-rendering='optimizeLegibility'   width='675' height='785' viewbox='0 0 675 785' >
+  <script type='text/ecmascript'>
+  <![CDATA[
+  function hghl(el) { for ( var i in el ){ document.getElementById(el[i]).setAttribute('class','highlight');  }  }
+  function uhghl(el) { for ( var i in el ){ document.getElementById(el[i]).setAttribute('class','scene'); }  } 
+  ]]>
+  </script> 
+
+<style type='text/css'>
+  text                { fill:#000000; font-family: Tahoma, 'Trebuchet MS', Dialog; font-size:11px; }
+  a text:hover        { text-shadow: 0 0 6px #d0ce00; }
+  text.highlight      { text-shadow: 0 0 4px #eac533; }
+  text.colType        { fill:#b3b3b3; }
+  text.relName        { fill:#b09c7c; }
+  path                { stroke:#5c554f; stroke-width:1.15; fill:none; }
+  path.virtual        { stroke:#b7642d; }
+  path.dotted         { stroke-dasharray:4,2; }
+  path.scene          { stroke-width:10; opacity:0;}
+  path.highlight      { stroke-width:5; stroke:#eac533; opacity:0.6;}
+  rect.table          { fill:#ffffff; stroke:#aaa; stroke-width:1;shape-rendering:crispEdges;filter:url(#shadow); }
+  line.delim          { stroke-width:1; shape-rendering:crispEdges; }
+  text.callout        { fill:#000000; font-family: Tahoma, 'Trebuchet MS', Dialog; font-size:11px; }
+  rect.callout        { fill:url(#calloutGradient); stroke:#bebdbd; stroke-width:0.5; filter: url(#shadow);}
+  rect.grp            { stroke:#b1b1b1; stroke-width:1.7; opacity:0.8; }
+</style>
+<defs>
+  <pattern id='layoutBgA' patternUnits='userSpaceOnUse'  width='10' height='20' x='0' y='0' viewBox='0 0 5 10'>  
+     <line x1='-2' y1='1' x2='7' y2='10' stroke='#efefef' stroke-width='.5'/>  
+     <line x1='-2' y1='6' x2='7' y2='15' stroke='#efefef' stroke-width='.5'/>  
+     <line x1='-2' y1='-4' x2='7' y2='5' stroke='#efefef' stroke-width='.5'/>  
+  </pattern>  
+  <radialGradient id='layoutBgB' gradientUnits='userSpaceOnUse' cx='50%' cy='50%' r='75%' fx='46%' fy='22%'>
+     <stop offset='0%' stop-opacity='.2' stop-color='#f5f5f5' />  
+     <stop offset='100%' stop-color='#efefef' />  
+  </radialGradient>
+  <pattern id='layoutBgTr' patternUnits='userSpaceOnUse'  width='300' height='300' x='0' y='0' viewBox='0 0 300 300'>  
+    <text x='-85' y='200' transform='rotate(-45)' style='font-family:Arial;font-size:78px;font-weight:bold;fill:#e7e7e7;'>&#84;&#82;&#73;&#65;&#76;</text> 
+    <text x='-130' y='230' transform='rotate(-45)' style='font-family:Arial;font-size:24px;font-weight:bold;fill:#e7e7e7;'>&#77;ove &#116;he m&#111;use &#111;ver &#116;ables</text> 
+    <text x='-85' y='250' transform='rotate(-45)' style='font-family:Arial;font-size:24px;font-weight:bold;fill:#e7e7e7;'>&#116;o re&#97;d &#116;he c&#111;mmen&#116;s</text> 
+  </pattern>  
+  <linearGradient id='groupUnderTitleLine' x1='0%' y1='0%' x2='100%' y2='0%' >
+          <stop offset='0%' stop-color='#999999' stop-opacity='0.7'/> 
+          <stop offset='100%' stop-color='#999999' stop-opacity='0' /> 
+   </linearGradient>
+  <radialGradient id='calloutGradient' cx='25%' cy='20%' r='80%' fx='10%' fy='10%'>
+	   <stop offset='0%' stop-color='#ffffff' />
+    <stop offset='100%' stop-color='#f8f6d1' />
+  </radialGradient>
+  <filter id='shadow' width='120%' height='120%'> 
+      <feOffset result='offOut' in='SourceGraphic' dx='1' dy='1' /> 
+      <feColorMatrix result='matrixOut' in='offOut' type='matrix' 
+      values='0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.3 0' /> 
+      <feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='3' /> 
+      <feBlend in='SourceGraphic' in2='blurOut' mode='normal' /> 
+    </filter> 
+  <filter id='fkShadow' height='130%'> 
+    <feGaussianBlur in='SourceAlpha' stdDeviation='1.5'/> <!-- stdDeviation is how much to blur -->
+    <feOffset dx='1.2' dy='1.2' result='offsetblur'/> <!-- how much to offset -->
+    <feMerge>
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in='SourceGraphic'/> <!-- this contains the element that the filter is applied to -->
+    </feMerge>
+  </filter>
+  <radialGradient id='legendGradient' fx='5%' fy='5%' r='75%' spreadMethod='pad'>
+          <stop offset='0%' stop-color='#eefbf2' stop-opacity='1'/> 
+          <stop offset='100%' stop-color='#cff9cb' stop-opacity='1' /> 
+   </radialGradient>
+  <symbol id='calloutArrowDown' overflow='visible' >
+      <path d='M 0,0 L 7,11 L 15,0 z' style='fill:#f8f6d1;stroke:none; filter: url(#shadow);' />
+      <path d='M 0,0 L 7,11 L 15,0' style='stroke:#bebdbd; stroke-width:0.5;' />
+  </symbol>
+  <symbol id='calloutArrowUp' overflow='visible' >
+      <path d='M 0,15 L 7,3 L 15,15 z' style='fill:#ffffff; stroke:none; filter: url(#shadow);' />
+      <path d='M 0,15 L 7,3 L 15,15' style='stroke:#bebdbd; stroke-width:0.5;' />
+  </symbol>
+  <symbol id='pk' overflow='visible' >
+    <g transform='scale(0.99)'>
+     <path style='fill:#fffa7d;stroke:#765f03;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;'
+        d='M 9.3678877,3.5695485 C 9.1030218,3.2729386 9.0796382,2.7628519 9.3396185,2.4517097 9.5449651,2.1956495 9.9040386,2.0980533 10.199638,2.2169415 10.533525,2.3415459 10.775153,2.706942 10.750675,3.0842709 10.737029,3.3980003 10.541153,3.699122 10.258248,3.8066067 9.966649,3.9250429 9.6169668,3.8418805 9.4008073,3.6062324 9.3894892,3.5943518 9.3785264,3.582104 9.3678886,3.5695487 z M 11.226617,6.9916004 C 11.888137,6.3548946 12.293488,5.4172188 12.311087,4.442353 12.378144,2.7379364 11.248678,1.0541269 9.7322318,0.44767357 8.3887112,-0.1280313 6.7865012,0.26822889 5.8918395,1.4007929 5.080823,2.3839145 4.9336815,3.8452096 5.3635544,5.101615 L 4.3670905,5.315913 C 4.0664984,5.3682645 4.0967703,5.6316724 4.2574957,5.8208829 L 4.9124,6.5655244 4.1543436,7.2512357 3.2136002,7.2163506 3.1674775,8.5586827 2.0406832,8.5086512 1.5965306,8.9299953 1.5471661,10.179833 0.75616674,10.195223 0.2112857,10.758575 0.15354288,11.735988 0.07199052,12.765553 c 0.36440953,0.238225 0.79006967,0.195492 1.44938278,-0.02675 L 6.3033562,8.1282037 6.8217102,8.6765688 C 6.9985465,8.8799427 7.3003699,8.7497574 7.358381,8.5016252 L 7.4938877,7.5084164 c 0.8537488,0.3985387 1.8303125,0.4711541 2.6851793,0.1427713 0.393927,-0.1407258 0.746858,-0.3701772 1.04755,-0.6595873 z'/>
+     <path d='M 6.8014948,6.3102123 0.15369063,13.024481 0.21560535,12.141962 6.0062342,6.2683782 z'
+        style='fill:#ffe5a5;fill-opacity:1;stroke:#854e31;stroke-width:0.06912433;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:3.00300009'/>
+    </g>
+  </symbol>
+  <symbol id='unq' overflow='visible' >
+    <g transform='scale(0.99)'>
+      <rect style='fill:#fbea8e;stroke:#7e4d31;stroke-width:0.71934468;stroke-linecap:round;stroke-linejoin:round;'
+         width='2.29' height='8.43' x='7.48' y='-0.76' ry='1.14' transform='matrix(0.701,0.713,-0.727,0.685,0,0)' />
+      <path style='fill:white;stroke:#858585;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;'
+         d='m 26.04,8.64 a 4.13,4.13 0 1 1 -8.26,0 4.13,4.13 0 1 1 8.26,0 z'
+         transform='matrix(1.025,0,0,0.987,-14.690,-3.862)' />
+      <text x='5.8' y='7.4' style='font-size:7px;fill:#8a8a8a;'>1</text>
+    </g>
+  </symbol>
+  <symbol id='idx' overflow='visible' >
+    <g transform='scale(0.99)'>
+      <rect style='fill:#fbea8e;stroke:#7e4d31;stroke-width:0.71934468;stroke-linecap:round;stroke-linejoin:round;'
+         width='2.29' height='8.43' x='7.48' y='-0.76' ry='1.14' transform='matrix(0.701,0.713,-0.727,0.685,0,0)' />
+      <path style='fill:white;stroke:#858585;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;'
+         d='m 26.04,8.64 a 4.13,4.13 0 1 1 -8.26,0 4.13,4.13 0 1 1 8.26,0 z'
+         transform='matrix(1.025,0,0,0.987,-14.690,-3.862)' />
+    </g>
+  </symbol>
+  <symbol id='fk' overflow='visible' >
+    <g transform='scale(0.87)'>
+      <path style='fill:#f3e1b7;stroke:#7e471f;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+      d='M 12.48,0.33 7.07,0.89 9.067,2.974 0.329,11.731 1.073,12.597 9.811,3.841 11.77,5.78 z' />
+    </g>
+  </symbol>
+  <symbol id='ref' overflow='visible' >
+    <g transform='scale(0.87)'>
+      <path style='fill:#f3e1b7;stroke:#7e471f;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.10,12.70 5.31,12.15 3.40,10.06 11.82,1.32 11.11,0.45 2.68,9.19 0.80,7.24 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag0' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#b7d0f6;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag1' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#f4a393;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag2' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#77ec8b;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='nn' overflow='visible' >
+  <path style='stroke:#9b3e50;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0,0 3,3 M 0,3 3,0 z'/>
+  </symbol>
+  <symbol id='view' overflow='visible' >
+    <g transform='scale(0.99)'>
+     <line x1='12' y1='6' x2='19' y2='0' stroke='black' stroke-width='0.5' />
+     <line x1='0' y1='6' x2='7' y2='0' stroke='black' stroke-width='0.5' />
+     <circle cx='3' cy='6' r='3' fill='#f9ebbc' stroke='black' stroke-width='0.5'/>
+     <circle cx='10' cy='6' r='3' fill='#f9ebbc' stroke='black' stroke-width='0.5'/>
+    </g>
+  </symbol>
+  <marker id='arrow01' viewBox='0 0 15.00 7.50' refX='7.50' refY='3.75' markerUnits='strokeWidth' markerWidth='15.00' markerHeight='7.50' orient='auto'>
+    <path d='M 7.500,3.750 L 15.000,3.750 L 7.500,0.000 L 15.000,3.750 L 7.500,7.500' />
+  </marker>
+  <marker id='arrow1' viewBox='0 0 15.00 7.50' refX='7.50' refY='3.75' markerUnits='strokeWidth' markerWidth='15.00' markerHeight='7.50' orient='auto'>
+    <path d='M 7.500,3.750 L 15.000,3.750 L 7.500,0.000 L 15.000,3.750 L 7.500,7.500' />
+  </marker>
+  <marker id='foot01' viewBox='0 0 15.00 7.50' refX='7.50' refY='3.75' markerUnits='strokeWidth' markerWidth='15.00' markerHeight='7.50' orient='auto'>
+    <path d='M 0.00,3.75 L 15.00,3.75 z' />
+    <circle cx='11.25' cy='3.75' r='2.50' style='fill:white;stroke:#5e554d;' />
+    <path d='M 3.75,0.00 L 3.75, 7.50 z' />
+  </marker>
+  <marker id='foot0p' viewBox='0 0 15.00 7.50' refX='7.50' refY='3.75' markerUnits='strokeWidth' markerWidth='15.00' markerHeight='7.50' orient='auto'>
+    <path d='M 0.00,3.75 L 15.00,3.75 z' />
+    <circle cx='11.25' cy='3.75' r='2.50' style='fill:white;stroke:#5e554d;' />
+    <path d='M 0.00,0.00 L 7.50,3.75 L 0.00,7.50' />
+  </marker>
+  <marker id='foot1' viewBox='0 0 15.00 7.50' refX='7.50' refY='3.75' markerUnits='strokeWidth' markerWidth='15.00' markerHeight='7.50' orient='auto'>
+    <path d='M 0.00,3.75 L 15.00,3.75 z' />
+    <path d='M 7.50,0.00 L 7.50, 7.50 z' />
+    <path d='M 3.75,0.00 L 3.75, 7.50 z' />
+  </marker>
+  <marker id='foot1p' viewBox='0 0 15.00 7.50' refX='7.50' refY='3.75' markerUnits='strokeWidth' markerWidth='15.00' markerHeight='7.50' orient='auto'>
+    <path d='M 0.00,3.75 L 15.00,3.75 z' />
+    <path d='M 7.50,0.00 L 7.50, 7.50 z' />
+    <path d='M 0.00,0.00 L 7.50,3.75 L 0.00,7.50' />
+  </marker>
+  <linearGradient id='tbg_c1d8ee' x1='0%' y1='0%' x2='0%' y2='100%' >
+     <stop offset='0%' stop-color='#e0ecf8' /> 
+     <stop offset='100%' stop-color='#c1d8ee' /> 
+  </linearGradient>
+</defs>
+
+<!-- ============= Desktop ============= -->
+<rect x='1' y='1' width='673' height='783' rx='7' ry='7' style='fill:url(#layoutBgB); stroke:#333333; stroke-width:0.5;' />
+<rect x='1' y='1' width='673' height='783' rx='7' ry='7' style='fill:url(#layoutBgA); stroke:#333333; stroke-width:0.5;' />
+
+<!-- ============= Legend ============= -->
+<g transform='translate(10,10)'>
+  <rect x='10' y='10' width='330' height='52' rx='6' ry='6' style='fill:url(#legendGradient);filter:url(#shadow);'/> 
+  <text x='65' y='33'>enrollments</text> 
+  <text x='65' y='49' style='fill:#aaaaaa; font-size:11px;'><tspan>Read table &amp; column comments as mouse-over tooltips.</tspan></text> 
+<g transform="scale(0.75,0.75) translate(10,7)" > <a xlink:href='http://www.dbschema.com'> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="40.04" y="59.44" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="54.83" y="59.57" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="40.35" y="71.62" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="54.68" y="71.75" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="13.48" y="19.67" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="28.36" y="19.80" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="13.79" y="31.78" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="28.21" y="31.92" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="34.59" y="-9.62" ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="49.63" y="-9.46" ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="34.90" y="5.77"  ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="49.47" y="5.93"  ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <title>Generated using DbSchema - www.dbschema.com</title> </a></g>
+</g>
+
+<g transform='translate(0,110)'>
+<!-- ============= Fk 'reg_enrollments_fk_ret_enrollments_0_' ============= -->
+<path id='reg_enrollments_fk_ret_enrollments_0_'  onmouseover="hghl(['reg_enrollments_fk_ret_enrollments_0_','upl_standard.reg_enrollments.id_academicPeriod','upl_standard.upl_academicperiods.id_code'])" onmouseout="uhghl(['reg_enrollments_fk_ret_enrollments_0_','upl_standard.reg_enrollments.id_academicPeriod','upl_standard.upl_academicperiods.id_code'])" transform='translate(7,0)' class='scene' d='M 270 270 L 195,270' >
+	<title>Fk fk_ret_enrollments_0_
+reg_enrollments ref upl_academicperiods ( id_academicPeriod -&gt; id_code )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 270 270 L 195,270' ></path>
+<text x='184' y='265' transform='rotate(0 184,265)' title='Fk fk_ret_enrollments_0_
+reg_enrollments ref upl_academicperiods ( id_academicPeriod -&gt; id_code )' class='relName'>id_academicPeriod</text>
+<!-- ============= Fk 'reg_enrollments_fk_ret_registration_data_' ============= -->
+<path id='reg_enrollments_fk_ret_registration_data_'  onmouseover="hghl(['reg_enrollments_fk_ret_registration_data_','upl_standard.reg_enrollments.id_campus','upl_standard.upl_campuses.id_code'])" onmouseout="uhghl(['reg_enrollments_fk_ret_registration_data_','upl_standard.reg_enrollments.id_campus','upl_standard.upl_campuses.id_code'])" transform='translate(7,0)' class='scene' d='M 375 240 L 375,127 Q 375,120 382,120 L 390,120' >
+	<title>Fk fk_ret_registration_data_
+reg_enrollments ref upl_campuses ( id_campus -&gt; id_code )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 375 240 L 375,127 Q 375,120 382,120 L 390,120' ></path>
+<text x='377' y='235' transform='rotate(270 377,235)' title='Fk fk_ret_registration_data_
+reg_enrollments ref upl_campuses ( id_campus -&gt; id_code )' class='relName'>id_campus</text>
+<!-- ============= Fk 'reg_enrollments_fk_ret_enrollments_2_' ============= -->
+<path id='reg_enrollments_fk_ret_enrollments_2_'  onmouseover="hghl(['reg_enrollments_fk_ret_enrollments_2_','upl_standard.reg_enrollments.id_course','upl_standard.upl_courses.id_code'])" onmouseout="uhghl(['reg_enrollments_fk_ret_enrollments_2_','upl_standard.reg_enrollments.id_course','upl_standard.upl_courses.id_code'])" transform='translate(7,0)' class='scene' d='M 405 270 L 495,270' >
+	<title>Fk fk_ret_enrollments_2_
+reg_enrollments ref upl_courses ( id_course -&gt; id_code )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 405 270 L 495,270' ></path>
+<text x='412' y='265' transform='rotate(0 412,265)' title='Fk fk_ret_enrollments_2_
+reg_enrollments ref upl_courses ( id_course -&gt; id_code )' class='relName'>id_course</text>
+<!-- ============= Fk 'reg_enrollments_fk_ret_enrollments_' ============= -->
+<path id='reg_enrollments_fk_ret_enrollments_'  onmouseover="hghl(['reg_enrollments_fk_ret_enrollments_','upl_standard.reg_enrollments.id_student','upl_standard.upl_students.id_code'])" onmouseout="uhghl(['reg_enrollments_fk_ret_enrollments_','upl_standard.reg_enrollments.id_student','upl_standard.upl_students.id_code'])" transform='translate(7,0)' class='scene' d='M 315 240 L 315,157 Q 315,150 307,150 L 300,150' >
+	<title>Fk fk_ret_enrollments_
+reg_enrollments ref upl_students ( id_student -&gt; id_code )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot1p)' marker-end='url(#arrow1)'    d='M 315 240 L 315,157 Q 315,150 307,150 L 300,150' ></path>
+<text x='317' y='235' transform='rotate(270 317,235)' title='Fk fk_ret_enrollments_
+reg_enrollments ref upl_students ( id_student -&gt; id_code )' class='relName'>id_student</text>
+<!-- ============= Fk 'upl_enrollment_statuses_fk_upl_enrollment_statuses' ============= -->
+<path id='upl_enrollment_statuses_fk_upl_enrollment_statuses'  onmouseover="hghl(['upl_enrollment_statuses_fk_upl_enrollment_statuses','upl_standard.upl_enrollment_statuses.id_code','upl_standard.reg_enrollments.id_status'])" onmouseout="uhghl(['upl_enrollment_statuses_fk_upl_enrollment_statuses','upl_standard.upl_enrollment_statuses.id_code','upl_standard.reg_enrollments.id_status'])" transform='translate(7,0)' class='scene' d='M 300 480 L 300,420' >
+	<title>Fk fk_upl_enrollment_statuses
+upl_enrollment_statuses ref reg_enrollments ( id_code -&gt; id_status )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot1)' marker-end='url(#arrow1)'  class='virtual'  d='M 300 480 L 300,420' ></path>
+<text x='302' y='475' transform='rotate(270 302,475)' title='Fk fk_upl_enrollment_statuses
+upl_enrollment_statuses ref reg_enrollments ( id_code -&gt; id_status )' class='relName'>id_code</text>
+<!-- ============= Table 'upl_courses' ============= -->
+<rect class='table' x='510' y='248' width='120' height='120' rx='7' ry='7' style='stroke:none'/>
+<path d='M 510.00 274.00 L 510.00 255.00 Q 510.00 248.00 517.00 248.00 L 623.00 248.00 Q 630.00 248.00 630.00 255.00 L 630.00 274.00 L510.00 274.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='510' y='248' width='120' height='120' rx='7' ry='7' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='510.000000' y1='274.000000' x2='630.000000' y2='274.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='525.000000' y1='274.000000' x2='525.000000' y2='368.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='619.000000' y1='274.000000' x2='619.000000' y2='368.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#upl_courses'><text x='538' y='266'>upl_courses</text><title>Table upl_standard.upl_courses</title></a>
+  <use id='nn' x='512' y='282' xlink:href='#nn'/><a xlink:href='#upl_courses.id_code'><use id='pk' x='512' y='281' xlink:href='#pk'/><title>Pk pk_upl_courses ( id_code ) </title></a>
+<a xlink:href='#upl_courses.id_code'><text id='upl_standard.upl_courses.id_code' x='528' y='291' onmouseover="hghl(['bkg_softwarelicenses_courses_Fk_bkg_softwareLicenses_courses_upl_courses','cls_sectionscomposition_fk_cls_sectionscomposition_0','enr_classnote_progress_Fk_enr_classnote_progress_upl_courses','enr_correction_requests_Fk_enr_correction_requests_upl_courses','enr_pensum_progress_Fk_enr_pensum_progress_upl_courses','imp_course_contents_Fk_imp_course_contents_upl_courses','imp_course_coordinators_fk_imp_course_coordinators_upl_courses','imp_course_data_Fk_imp_course_data_upl_courses','imp_course_evaluationcomponents_fk_imp_course_evaluationcomponents_upl_courses','imp_course_evaluationmethods_fk_imp_course_evaluationmethods_upl_courses','imp_course_evidences_fk_imp_course_evidences_upl_courses','imp_course_learningstrategies_Fk_imp_course_learningStrategies_upl_courses','imp_course_outcomes_fk_imp_course_outcomes_upl_courses','imp_course_references_fk_imp_course_references_upl_courses','imp_course_resources_fk_imp_course_resources_upl_courses','imp_course_sessions_fk_imp_course_sessions_upl_courses','imp_course_units_fk_imp_course_units_upl_courses','imp_courses_competencies_fk_imp_courses_competencies_upl_courses','imp_pensum_improvementactions_fk_imp_pensum_improvementactions_id_course','reg_enrollments_fk_ret_enrollments_2_','reg_equivalentcourses_fk_reg_equivalentCourses','reg_equivalentcourses_fk_reg_equivalentourses_2','reg_recognitions_fk_ret_convalidaciones_2_','upl_academicprogramming_courses_FK_UPL_academicProgramming_course_id_course','upl_approvalrate_fk_upl_approval_rate_2','upl_coursepensum_electives_fk_upl_coursepensum_electives_0','upl_courses_activities_FK_UPL_courseActivity_id_course','upl_courses_concentrations_fk_upl_courses_pensum_concentrations_0','upl_courses_pensums_FK_UPL_course_pensum_id_course','upl_courses_specialties_FK_UPL_courses_majors_id_course','upl_crossedlistsdetail_fk_upl_crossedlistdetail_upl_courses','upl_equivalentcourses_fk_upl_equivalentCourses','upl_equivalentcourses_fk_upl_equivalentcourses_0','upl_forecast_fk_upl_forecast_upl_courses','upl_forecast_crossedlistdetail_fk_upl_forecast_crossedlistdetail_5','upl_forecast_mainlistdetail_fk_upl_forecast_crossedlistdetail_55_','upl_forecastoutput_FK_UPL_demandAlgorithmOutput_id_course','upl_pensum_equivalentcourses_fk_upl_pensum_equivalentcourses','upl_pensum_equivalentcourses_fk_upl_pensum_equivalentcourses_0','upl_pensum_progress_upl_pensum_progress_ibfk_3_','upl_sectionsoutputs_fk_upl_sectionsoutputs_1','upl_sectionsoutputs_forecastoutputs_fk_upl_sectionsoutputs_forecastoutputs','upl_sectionsoutputs_forecastoutputs_upl_sectionsoutputs_forecastoutputs_ibfk_3','upl_simulation_demmand_courses_fk_upl_simulation_demmand_course_upl_courses'])" onmouseout="uhghl(['bkg_softwarelicenses_courses_Fk_bkg_softwareLicenses_courses_upl_courses','cls_sectionscomposition_fk_cls_sectionscomposition_0','enr_classnote_progress_Fk_enr_classnote_progress_upl_courses','enr_correction_requests_Fk_enr_correction_requests_upl_courses','enr_pensum_progress_Fk_enr_pensum_progress_upl_courses','imp_course_contents_Fk_imp_course_contents_upl_courses','imp_course_coordinators_fk_imp_course_coordinators_upl_courses','imp_course_data_Fk_imp_course_data_upl_courses','imp_course_evaluationcomponents_fk_imp_course_evaluationcomponents_upl_courses','imp_course_evaluationmethods_fk_imp_course_evaluationmethods_upl_courses','imp_course_evidences_fk_imp_course_evidences_upl_courses','imp_course_learningstrategies_Fk_imp_course_learningStrategies_upl_courses','imp_course_outcomes_fk_imp_course_outcomes_upl_courses','imp_course_references_fk_imp_course_references_upl_courses','imp_course_resources_fk_imp_course_resources_upl_courses','imp_course_sessions_fk_imp_course_sessions_upl_courses','imp_course_units_fk_imp_course_units_upl_courses','imp_courses_competencies_fk_imp_courses_competencies_upl_courses','imp_pensum_improvementactions_fk_imp_pensum_improvementactions_id_course','reg_enrollments_fk_ret_enrollments_2_','reg_equivalentcourses_fk_reg_equivalentCourses','reg_equivalentcourses_fk_reg_equivalentourses_2','reg_recognitions_fk_ret_convalidaciones_2_','upl_academicprogramming_courses_FK_UPL_academicProgramming_course_id_course','upl_approvalrate_fk_upl_approval_rate_2','upl_coursepensum_electives_fk_upl_coursepensum_electives_0','upl_courses_activities_FK_UPL_courseActivity_id_course','upl_courses_concentrations_fk_upl_courses_pensum_concentrations_0','upl_courses_pensums_FK_UPL_course_pensum_id_course','upl_courses_specialties_FK_UPL_courses_majors_id_course','upl_crossedlistsdetail_fk_upl_crossedlistdetail_upl_courses','upl_equivalentcourses_fk_upl_equivalentCourses','upl_equivalentcourses_fk_upl_equivalentcourses_0','upl_forecast_fk_upl_forecast_upl_courses','upl_forecast_crossedlistdetail_fk_upl_forecast_crossedlistdetail_5','upl_forecast_mainlistdetail_fk_upl_forecast_crossedlistdetail_55_','upl_forecastoutput_FK_UPL_demandAlgorithmOutput_id_course','upl_pensum_equivalentcourses_fk_upl_pensum_equivalentcourses','upl_pensum_equivalentcourses_fk_upl_pensum_equivalentcourses_0','upl_pensum_progress_upl_pensum_progress_ibfk_3_','upl_sectionsoutputs_fk_upl_sectionsoutputs_1','upl_sectionsoutputs_forecastoutputs_fk_upl_sectionsoutputs_forecastoutputs','upl_sectionsoutputs_forecastoutputs_upl_sectionsoutputs_forecastoutputs_ibfk_3','upl_simulation_demmand_courses_fk_upl_simulation_demmand_course_upl_courses'])">id_code</text><title>id_code
+* int</title></a>
+<a xlink:href='#upl_courses.id_code'><use id='ref' x='619' y='281' xlink:href='#ref'/><title>Referred by bkg_softwarelicenses_courses ( id_course -&gt; id_code ) 
+Referred by cls_sectionscomposition ( id_course -&gt; id_code ) 
+Referred by enr_classnote_progress ( id_course -&gt; id_code ) 
+Referred by enr_correction_requests ( id_course -&gt; id_code ) 
+Referred by enr_pensum_progress ( id_course -&gt; id_code ) 
+Referred by imp_course_contents ( id_course -&gt; id_code ) 
+Referred by imp_course_coordinators ( id_course -&gt; id_code ) 
+Referred by imp_course_data ( id_course -&gt; id_code ) 
+Referred by imp_course_evaluationcomponents ( id_course -&gt; id_code ) 
+Referred by imp_course_evaluationmethods ( id_course -&gt; id_code ) 
+Referred by imp_course_evidences ( id_course -&gt; id_code ) 
+Referred by imp_course_learningstrategies ( id_course -&gt; id_code ) 
+Referred by imp_course_outcomes ( id_course -&gt; id_code ) 
+Referred by imp_course_references ( id_course -&gt; id_code ) 
+Referred by imp_course_resources ( id_course -&gt; id_code ) 
+Referred by imp_course_sessions ( id_course -&gt; id_code ) 
+Referred by imp_course_units ( id_course -&gt; id_code ) 
+Referred by imp_courses_competencies ( id_course -&gt; id_code ) 
+Referred by imp_pensum_improvementactions ( id_course -&gt; id_code ) 
+Referred by reg_enrollments ( id_course -&gt; id_code ) 
+Referred by reg_equivalentcourses ( id_course_equivalent -&gt; id_code ) 
+Referred by reg_equivalentcourses ( id_course -&gt; id_code ) 
+Referred by reg_recognitions ( id_courseValidated -&gt; id_code ) 
+Referred by upl_academicprogramming_courses ( id_course -&gt; id_code ) 
+Referred by upl_approvalrate ( id_course -&gt; id_code ) 
+Referred by upl_coursepensum_electives ( id_course_elective -&gt; id_code ) 
+Referred by upl_courses_activities ( id_course -&gt; id_code ) 
+Referred by upl_courses_concentrations ( id_course -&gt; id_code ) 
+Referred by upl_courses_pensums ( id_course -&gt; id_code ) 
+Referred by upl_courses_specialties ( id_course -&gt; id_code ) 
+Referred by upl_crossedlistsdetail ( id_course -&gt; id_code ) 
+Referred by upl_equivalentcourses ( id_equivalent_course -&gt; id_code ) 
+Referred by upl_equivalentcourses ( id_origin_course -&gt; id_code ) 
+Referred by upl_forecast ( id_course -&gt; id_code ) 
+Referred by upl_forecast_crossedlistdetail ( id_course -&gt; id_code ) 
+Referred by upl_forecast_mainlistdetail ( id_course -&gt; id_code ) 
+Referred by upl_forecastoutput ( id_course -&gt; id_code ) 
+Referred by upl_pensum_equivalentcourses ( id_origin_course -&gt; id_code ) 
+Referred by upl_pensum_equivalentcourses ( id_equivalent_course -&gt; id_code ) 
+Referred by upl_pensum_progress ( id_course -&gt; id_code ) 
+Referred by upl_sectionsoutputs ( id_course_crossedList -&gt; id_code ) 
+Referred by upl_sectionsoutputs_forecastoutputs ( id_course -&gt; id_code ) 
+Referred by upl_sectionsoutputs_forecastoutputs ( id_course_generic -&gt; id_code ) 
+Referred by upl_simulation_demmand_courses ( id_course -&gt; id_code ) </title></a>
+  <use id='nn' x='512' y='297' xlink:href='#nn'/><a xlink:href='#upl_courses.ds_name'><text id='upl_standard.upl_courses.ds_name' x='528' y='306'>ds_name</text><title>ds_name
+* varchar(500)</title></a>
+  <a xlink:href='#upl_courses.nm_credits'><text id='upl_standard.upl_courses.nm_credits' x='528' y='321'>nm_credits</text><title>nm_credits
+float(10,3)</title></a>
+  <a xlink:href='#upl_courses.ds_integrationId'><use id='idx' x='512' y='326' xlink:href='#idx'/><title>ds_integrationId ( ds_integrationId ) </title></a>
+<a xlink:href='#upl_courses.ds_integrationId'><text id='upl_standard.upl_courses.ds_integrationId' x='528' y='336'>ds_integrationId</text><title>ds_integrationId
+varchar(100)</title></a>
+  <use id='nn' x='512' y='342' xlink:href='#nn'/><a xlink:href='#upl_courses.is_active'><text id='upl_standard.upl_courses.is_active' x='528' y='351'>is_active</text><title>is_active
+* tinyint default 1</title></a>
+
+<!-- ============= Table 'upl_students' ============= -->
+<rect class='table' x='180' y='38' width='120' height='120' rx='7' ry='7' style='stroke:none'/>
+<path d='M 180.00 64.00 L 180.00 45.00 Q 180.00 38.00 187.00 38.00 L 293.00 38.00 Q 300.00 38.00 300.00 45.00 L 300.00 64.00 L180.00 64.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='180' y='38' width='120' height='120' rx='7' ry='7' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='180.000000' y1='64.000000' x2='300.000000' y2='64.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='195.000000' y1='64.000000' x2='195.000000' y2='158.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='289.000000' y1='64.000000' x2='289.000000' y2='158.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#upl_students'><text x='206' y='56'>upl_students</text><title>Table upl_standard.upl_students</title></a>
+  <use id='nn' x='182' y='72' xlink:href='#nn'/><a xlink:href='#upl_students.id_code'><use id='unq' x='182' y='71' xlink:href='#unq'/><title>Unq pk_upl_students ( id_code ) </title></a>
+<a xlink:href='#upl_students.id_code'><text id='upl_standard.upl_students.id_code' x='198' y='81' onmouseover="hghl(['asm_student_marks_fk_asm_student_marks','cls_beacon_signals_fk_cls_beacon_signals_0','cls_student_attendance_history_fk_cls_student_attendance_history','cls_student_images_fk_cls_student_images','cls_student_mobiledata_fk_cls_student_mobiledata_id_student','cls_students_attendance_fk_cls_students_attendance','cls_students_sectiongroups_fk_upl_students_22','cls_students_sections_fk_cls_students_sections_0','cls_students_sections_delegate_log_fk_id_student_delegated','eng_instance_students_fk_eng_instance_students_id_student','eng_students_attendance_fk_eng_student_attendance_id_student','enr_correction_requests_fk_upl_correction_request_upl_students','enr_pensum_progress_Fk_enr_pensum_progress_upl_students','enr_student_indicators_fk_enr_student_indicators_id_student','exm_scenario_outputs_Fk_exm_scenario_outputs_upl_students','exm_scenarioassignment_conflicts_Fk_exm_scenarioassignments_conflicts_upl_students','exm_scenarioassignment_exams_fk_exm_scenarioassignments4','reg_enrollments_fk_ret_enrollments_','reg_recognitions_fk_ret_convalidaciones_','reg_specialstudents_fk_reg_specialStudents','reg_student_current_statuses_fk_reg_student_present_statuses','reg_student_future_status_fk_reg_student_future_status','reg_student_pensums_Fk_reg_student_pensums_upl_students','ret_calibration_students_fk_ret_calibration_student_0_','ret_careerfunds_fk_ret_data_finance_careers','ret_contacts_fk_ret_bitacoraContacts_','ret_extraacademicinformation_fk_ret_extra_academic_information','ret_familydata_fk_ret_family_data_','ret_institutional_categorical_factors_fk_id_student','ret_institutional_indicator_values_ret_institutional_indicator_values_ibfk_1','ret_institutional_numerical_factors_fk_student','ret_membershipgroups_fk_ret_membership_groups','ret_payments_fk_ret_payments_history_','ret_personaldata_fk_ret_personalData','ret_predicted_students_fk_ret_predicted_students_id_student','ret_student_factors_fk_ret_student_factors_0','ret_student_non_predictive_factors_fk_ret_student_non_predictive_factors_id_student','ret_student_risks_fk_ret_student_risk','ret_student_tracking_ret_student_tracking_ibfk_1_','ret_studentadmissions_fk_ret_studentAdmissions_1','ret_stundent_desertions_fk_ret_stundent_desertions','ret_surveys_fk_ret_surveys','ret_temporalconditions_fk_ret_temporalConditions','ret_volunteeractivities_fk_ret_distinctions_volunteer_activities','upl_pensum_progress_upl_pensum_progress_ibfk_7_'])" onmouseout="uhghl(['asm_student_marks_fk_asm_student_marks','cls_beacon_signals_fk_cls_beacon_signals_0','cls_student_attendance_history_fk_cls_student_attendance_history','cls_student_images_fk_cls_student_images','cls_student_mobiledata_fk_cls_student_mobiledata_id_student','cls_students_attendance_fk_cls_students_attendance','cls_students_sectiongroups_fk_upl_students_22','cls_students_sections_fk_cls_students_sections_0','cls_students_sections_delegate_log_fk_id_student_delegated','eng_instance_students_fk_eng_instance_students_id_student','eng_students_attendance_fk_eng_student_attendance_id_student','enr_correction_requests_fk_upl_correction_request_upl_students','enr_pensum_progress_Fk_enr_pensum_progress_upl_students','enr_student_indicators_fk_enr_student_indicators_id_student','exm_scenario_outputs_Fk_exm_scenario_outputs_upl_students','exm_scenarioassignment_conflicts_Fk_exm_scenarioassignments_conflicts_upl_students','exm_scenarioassignment_exams_fk_exm_scenarioassignments4','reg_enrollments_fk_ret_enrollments_','reg_recognitions_fk_ret_convalidaciones_','reg_specialstudents_fk_reg_specialStudents','reg_student_current_statuses_fk_reg_student_present_statuses','reg_student_future_status_fk_reg_student_future_status','reg_student_pensums_Fk_reg_student_pensums_upl_students','ret_calibration_students_fk_ret_calibration_student_0_','ret_careerfunds_fk_ret_data_finance_careers','ret_contacts_fk_ret_bitacoraContacts_','ret_extraacademicinformation_fk_ret_extra_academic_information','ret_familydata_fk_ret_family_data_','ret_institutional_categorical_factors_fk_id_student','ret_institutional_indicator_values_ret_institutional_indicator_values_ibfk_1','ret_institutional_numerical_factors_fk_student','ret_membershipgroups_fk_ret_membership_groups','ret_payments_fk_ret_payments_history_','ret_personaldata_fk_ret_personalData','ret_predicted_students_fk_ret_predicted_students_id_student','ret_student_factors_fk_ret_student_factors_0','ret_student_non_predictive_factors_fk_ret_student_non_predictive_factors_id_student','ret_student_risks_fk_ret_student_risk','ret_student_tracking_ret_student_tracking_ibfk_1_','ret_studentadmissions_fk_ret_studentAdmissions_1','ret_stundent_desertions_fk_ret_stundent_desertions','ret_surveys_fk_ret_surveys','ret_temporalconditions_fk_ret_temporalConditions','ret_volunteeractivities_fk_ret_distinctions_volunteer_activities','upl_pensum_progress_upl_pensum_progress_ibfk_7_'])">id_code</text><title>id_code
+* int</title></a>
+<a xlink:href='#upl_students.id_code'><use id='ref' x='289' y='71' xlink:href='#ref'/><title>Referred by asm_student_marks ( id_student -&gt; id_code ) 
+Referred by cls_beacon_signals ( id_student -&gt; id_code ) 
+Referred by cls_student_attendance_history ( id_student -&gt; id_code ) 
+Referred by cls_student_images ( sid -&gt; id_code ) 
+Referred by cls_student_mobiledata ( id_student -&gt; id_code ) 
+Referred by cls_students_attendance ( id_student -&gt; id_code ) 
+Referred by cls_students_sectiongroups ( id_student -&gt; id_code ) 
+Referred by cls_students_sections ( id_student -&gt; id_code ) 
+Referred by cls_students_sections_delegate_log ( id_student_delegated -&gt; id_code ) 
+Referred by eng_instance_students ( id_student -&gt; id_code ) 
+Referred by eng_students_attendance ( id_student -&gt; id_code ) 
+Referred by enr_correction_requests ( id_student -&gt; id_code ) 
+Referred by enr_pensum_progress ( id_student -&gt; id_code ) 
+Referred by enr_student_indicators ( id_student -&gt; id_code ) 
+Referred by exm_scenario_outputs ( id_student -&gt; id_code ) 
+Referred by exm_scenarioassignment_conflicts ( id_student -&gt; id_code ) 
+Referred by exm_scenarioassignment_exams ( id_student -&gt; id_code ) 
+Referred by reg_enrollments ( id_student -&gt; id_code ) 
+Referred by reg_recognitions ( id_student -&gt; id_code ) 
+Referred by reg_specialstudents ( id_student -&gt; id_code ) 
+Referred by reg_student_current_statuses ( id_student -&gt; id_code ) 
+Referred by reg_student_future_status ( id_student -&gt; id_code ) 
+Referred by reg_student_pensums ( id_student -&gt; id_code ) 
+Referred by ret_calibration_students ( id_student -&gt; id_code ) 
+Referred by ret_careerfunds ( id_student -&gt; id_code ) 
+Referred by ret_contacts ( id_student -&gt; id_code ) 
+Referred by ret_extraacademicinformation ( id_student -&gt; id_code ) 
+Referred by ret_familydata ( id_student -&gt; id_code ) 
+Referred by ret_institutional_categorical_factors ( id_student -&gt; id_code ) 
+Referred by ret_institutional_indicator_values ( id_student -&gt; id_code ) 
+Referred by ret_institutional_numerical_factors ( id_student -&gt; id_code ) 
+Referred by ret_membershipgroups ( id_student -&gt; id_code ) 
+Referred by ret_payments ( id_student -&gt; id_code ) 
+Referred by ret_personaldata ( id_student -&gt; id_code ) 
+Referred by ret_predicted_students ( id_student -&gt; id_code ) 
+Referred by ret_student_factors ( id_student -&gt; id_code ) 
+Referred by ret_student_non_predictive_factors ( id_student -&gt; id_code ) 
+Referred by ret_student_risks ( id_student -&gt; id_code ) 
+Referred by ret_student_tracking ( id_student -&gt; id_code ) 
+Referred by ret_studentadmissions ( id_student -&gt; id_code ) 
+Referred by ret_stundent_desertions ( id_student -&gt; id_code ) 
+Referred by ret_surveys ( id_student -&gt; id_code ) 
+Referred by ret_temporalconditions ( id_student -&gt; id_code ) 
+Referred by ret_volunteeractivities ( id_student -&gt; id_code ) 
+Referred by upl_pensum_progress ( id_student -&gt; id_code ) </title></a>
+  <a xlink:href='#upl_students.ds_names'><text id='upl_standard.upl_students.ds_names' x='198' y='96'>ds_names</text><title>ds_names
+varchar(100)</title></a>
+  <a xlink:href='#upl_students.ds_lastNames'><text id='upl_standard.upl_students.ds_lastNames' x='198' y='111'>ds_lastNames</text><title>ds_lastNames
+varchar(200)</title></a>
+  <a xlink:href='#upl_students.ds_integrationId'><use id='unq' x='182' y='116' xlink:href='#unq'/><title>Unq idx_upl_students ( ds_integrationId ) </title></a>
+<a xlink:href='#upl_students.ds_integrationId'><text id='upl_standard.upl_students.ds_integrationId' x='198' y='126'>ds_integrationId</text><title>ds_integrationId
+varchar(100)</title></a>
+  <use id='nn' x='182' y='132' xlink:href='#nn'/><a xlink:href='#upl_students.is_active'><text id='upl_standard.upl_students.is_active' x='198' y='141'>is_active</text><title>is_active
+* tinyint default 1</title></a>
+
+<!-- ============= Table 'upl_campuses' ============= -->
+<rect class='table' x='405' y='38' width='120' height='105' rx='7' ry='7' style='stroke:none'/>
+<path d='M 405.00 64.00 L 405.00 45.00 Q 405.00 38.00 412.00 38.00 L 518.00 38.00 Q 525.00 38.00 525.00 45.00 L 525.00 64.00 L405.00 64.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='405' y='38' width='120' height='105' rx='7' ry='7' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='405.000000' y1='64.000000' x2='525.000000' y2='64.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='420.000000' y1='64.000000' x2='420.000000' y2='143.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='514.000000' y1='64.000000' x2='514.000000' y2='143.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#upl_campuses'><text x='428' y='56'>upl_campuses</text><title>Table upl_standard.upl_campuses</title></a>
+  <use id='nn' x='407' y='72' xlink:href='#nn'/><a xlink:href='#upl_campuses.id_code'><use id='pk' x='407' y='71' xlink:href='#pk'/><title>Pk pk_upl_campuses ( id_code ) </title></a>
+<a xlink:href='#upl_campuses.id_code'><text id='upl_standard.upl_campuses.id_code' x='423' y='81' onmouseover="hghl(['bkg_bookingaccess_Fk_bkg_bookingaccess_upl_campuses_','bkg_bookings_Fk_bkg_bookings_upl_campuses','bkg_campus_resourcetypes_roles_Fk_bkg_classroomusagetypes_roles_upl_campuses','eng_ssc_campus_fk_eng_ssc_campus_id_campus','enr_classnote_progress_Fk_enr_classnote_progress_upl_campuses','enr_correction_requests_Fk_enr_correction_requests_upl_campuses','enr_pensum_progress_Fk_enr_pensum_progress_upl_campuses','exm_scenario_supervisor_availabilities_Fk_exm_supervisor_scenario_availabilities_upl_campuses','exm_supervisor_availabilities_Fk_exm_supervisor_availabilities_upl_campuses','reg_enrollments_fk_ret_registration_data_','reg_equivalentcourses_fk_reg_equivalentourses','reg_recognitions_fk_reg_recognitions_','reg_specialstudents_fk_reg_specialStudents_0','ret_bar_values_fk_ret_bar_values_1','ret_extraacademicinformation_Fk_ret_extraacademicinformation_upl_campuses','ret_graph_values_fk_ret_graph_values_0','ret_inst_submodels_Fk_ret_inst_submodel_names_upl_campuses','ret_partialgrades_Fk_ret_partialGrades_upl_campuses_','ret_payments_Fk_ret_payments_upl_campuses_','ret_percent_values_fk_ret_percent_values_3','ret_student_career_risks_fk_ret_student_factor_risks','ret_surveys_Fk_ret_surveys_upl_campuses','upl_approvalrate_fk_upl_approvalrate','upl_campus_academicperiod_shift_FK_UPL_campus_academicPeriod_shift_id_campus','upl_campus_addresses_fk_upl_campus_addresses','upl_classnotes_fk_upl_classnotes','upl_crossedlists_fk_upl_crossedlist_upl_campuses','upl_desertionrate_fk_upl_desertionrate','upl_forecast_crossedlistdetail_fk_upl_forecast_crossedlistdetail_0','upl_forecast_mainlistdetail_fk_upl_forecast_crossedlistdetail_00_','upl_historysectionquota_fk_upl_historysectionquota','upl_locations_FK_UPL_location_id_campus','upl_pensum_campus_fk_upl_pensum_campus_upl_campuses','upl_pensum_progress_upl_pensum_progress_ibfk_2_','upl_schedulerange_Fk_upl_schedulerange_upl_campuses_0','upl_simulation_demmand_campuses_academicperiods_shifts_fk_upl_simulation_demmand_cpj_upl_campus','upl_simulation_demmand_cmppershift_careerspensums_fk_upl_simulation_demmand_cpj_cp_upl_campus','upl_teacher_availabilities_fk_upl_teacher_availabilities_0','upl_teacher_simulation_availabilities_fk_upl_teacher_simulation_avalavilities_1'])" onmouseout="uhghl(['bkg_bookingaccess_Fk_bkg_bookingaccess_upl_campuses_','bkg_bookings_Fk_bkg_bookings_upl_campuses','bkg_campus_resourcetypes_roles_Fk_bkg_classroomusagetypes_roles_upl_campuses','eng_ssc_campus_fk_eng_ssc_campus_id_campus','enr_classnote_progress_Fk_enr_classnote_progress_upl_campuses','enr_correction_requests_Fk_enr_correction_requests_upl_campuses','enr_pensum_progress_Fk_enr_pensum_progress_upl_campuses','exm_scenario_supervisor_availabilities_Fk_exm_supervisor_scenario_availabilities_upl_campuses','exm_supervisor_availabilities_Fk_exm_supervisor_availabilities_upl_campuses','reg_enrollments_fk_ret_registration_data_','reg_equivalentcourses_fk_reg_equivalentourses','reg_recognitions_fk_reg_recognitions_','reg_specialstudents_fk_reg_specialStudents_0','ret_bar_values_fk_ret_bar_values_1','ret_extraacademicinformation_Fk_ret_extraacademicinformation_upl_campuses','ret_graph_values_fk_ret_graph_values_0','ret_inst_submodels_Fk_ret_inst_submodel_names_upl_campuses','ret_partialgrades_Fk_ret_partialGrades_upl_campuses_','ret_payments_Fk_ret_payments_upl_campuses_','ret_percent_values_fk_ret_percent_values_3','ret_student_career_risks_fk_ret_student_factor_risks','ret_surveys_Fk_ret_surveys_upl_campuses','upl_approvalrate_fk_upl_approvalrate','upl_campus_academicperiod_shift_FK_UPL_campus_academicPeriod_shift_id_campus','upl_campus_addresses_fk_upl_campus_addresses','upl_classnotes_fk_upl_classnotes','upl_crossedlists_fk_upl_crossedlist_upl_campuses','upl_desertionrate_fk_upl_desertionrate','upl_forecast_crossedlistdetail_fk_upl_forecast_crossedlistdetail_0','upl_forecast_mainlistdetail_fk_upl_forecast_crossedlistdetail_00_','upl_historysectionquota_fk_upl_historysectionquota','upl_locations_FK_UPL_location_id_campus','upl_pensum_campus_fk_upl_pensum_campus_upl_campuses','upl_pensum_progress_upl_pensum_progress_ibfk_2_','upl_schedulerange_Fk_upl_schedulerange_upl_campuses_0','upl_simulation_demmand_campuses_academicperiods_shifts_fk_upl_simulation_demmand_cpj_upl_campus','upl_simulation_demmand_cmppershift_careerspensums_fk_upl_simulation_demmand_cpj_cp_upl_campus','upl_teacher_availabilities_fk_upl_teacher_availabilities_0','upl_teacher_simulation_availabilities_fk_upl_teacher_simulation_avalavilities_1'])">id_code</text><title>id_code
+* int</title></a>
+<a xlink:href='#upl_campuses.id_code'><use id='ref' x='514' y='71' xlink:href='#ref'/><title>Referred by bkg_bookingaccess ( id_campus -&gt; id_code ) 
+Referred by bkg_bookings ( id_campus -&gt; id_code ) 
+Referred by bkg_campus_resourcetypes_roles ( id_campus -&gt; id_code ) 
+Referred by eng_ssc_campus ( id_campus -&gt; id_code ) 
+Referred by enr_classnote_progress ( id_campus -&gt; id_code ) 
+Referred by enr_correction_requests ( id_campus -&gt; id_code ) 
+Referred by enr_pensum_progress ( id_campus -&gt; id_code ) 
+Referred by exm_scenario_supervisor_availabilities ( id_campus -&gt; id_code ) 
+Referred by exm_supervisor_availabilities ( id_campus -&gt; id_code ) 
+Referred by reg_enrollments ( id_campus -&gt; id_code ) 
+Referred by reg_equivalentcourses ( id_campus -&gt; id_code ) 
+Referred by reg_recognitions ( id_campus -&gt; id_code ) 
+Referred by reg_specialstudents ( id_campus -&gt; id_code ) 
+Referred by ret_bar_values ( id_campus -&gt; id_code ) 
+Referred by ret_extraacademicinformation ( id_campus -&gt; id_code ) 
+Referred by ret_graph_values ( id_campus -&gt; id_code ) 
+Referred by ret_inst_submodels ( id_campus -&gt; id_code ) 
+Referred by ret_partialgrades ( id_campus -&gt; id_code ) 
+Referred by ret_payments ( id_campus -&gt; id_code ) 
+Referred by ret_percent_values ( id_campus -&gt; id_code ) 
+Referred by ret_student_career_risks ( id_campus -&gt; id_code ) 
+Referred by ret_surveys ( id_campus -&gt; id_code ) 
+Referred by upl_approvalrate ( id_campus -&gt; id_code ) 
+Referred by upl_campus_academicperiod_shift ( id_campus -&gt; id_code ) 
+Referred by upl_campus_addresses ( id_campus -&gt; id_code ) 
+Referred by upl_classnotes ( id_campus -&gt; id_code ) 
+Referred by upl_crossedlists ( id_campus -&gt; id_code ) 
+Referred by upl_desertionrate ( id_campus -&gt; id_code ) 
+Referred by upl_forecast_crossedlistdetail ( id_campus -&gt; id_code ) 
+Referred by upl_forecast_mainlistdetail ( id_campus -&gt; id_code ) 
+Referred by upl_historysectionquota ( id_campus -&gt; id_code ) 
+Referred by upl_locations ( id_campus -&gt; id_code ) 
+Referred by upl_pensum_campus ( id_campus -&gt; id_code ) 
+Referred by upl_pensum_progress ( id_campus -&gt; id_code ) 
+Referred by upl_schedulerange ( id_campus -&gt; id_code ) 
+Referred by upl_simulation_demmand_campuses_academicperiods_shifts ( id_campus -&gt; id_code ) 
+Referred by upl_simulation_demmand_cmppershift_careerspensums ( id_campus -&gt; id_code ) 
+Referred by upl_teacher_availabilities ( id_campus -&gt; id_code ) 
+Referred by upl_teacher_simulation_availabilities ( id_campus -&gt; id_code ) </title></a>
+  <a xlink:href='#upl_campuses.ds_name'><text id='upl_standard.upl_campuses.ds_name' x='423' y='96'>ds_name</text><title>ds_name
+varchar(200)</title></a>
+  <use id='nn' x='407' y='102' xlink:href='#nn'/><a xlink:href='#upl_campuses.ds_integrationId'><text id='upl_standard.upl_campuses.ds_integrationId' x='423' y='111'>ds_integrationId</text><title>ds_integrationId
+* varchar(100)</title></a>
+  <use id='nn' x='407' y='117' xlink:href='#nn'/><a xlink:href='#upl_campuses.is_active'><text id='upl_standard.upl_campuses.is_active' x='423' y='126'>is_active</text><title>is_active
+* bit default 1</title></a>
+
+<!-- ============= Table 'reg_enrollments' ============= -->
+<rect class='table' x='285' y='248' width='120' height='165' rx='7' ry='7' style='stroke:none'/>
+<path d='M 285.00 274.00 L 285.00 255.00 Q 285.00 248.00 292.00 248.00 L 398.00 248.00 Q 405.00 248.00 405.00 255.00 L 405.00 274.00 L285.00 274.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='285' y='248' width='120' height='165' rx='7' ry='7' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='285.000000' y1='274.000000' x2='405.000000' y2='274.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='300.000000' y1='274.000000' x2='300.000000' y2='413.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='394.000000' y1='274.000000' x2='394.000000' y2='413.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#reg_enrollments'><text x='303' y='266'>reg_enrollments</text><title>Table upl_standard.reg_enrollments</title></a>
+  <use id='nn' x='287' y='282' xlink:href='#nn'/><a xlink:href='#reg_enrollments.id_code'><use id='pk' x='287' y='281' xlink:href='#pk'/><title>Pk pk_reg_enrollments ( id_code ) </title></a>
+<a xlink:href='#reg_enrollments.id_code'><text id='upl_standard.reg_enrollments.id_code' x='303' y='291'>id_code</text><title>id_code
+* int</title></a>
+  <use id='nn' x='287' y='297' xlink:href='#nn'/><a xlink:href='#reg_enrollments.id_student'><use id='unq' x='287' y='296' xlink:href='#unq'/><title>Unq uq_reg_enrollments ( id_student, id_campus, id_academicPeriod ) idx_ret_enrollments_ ( id_student ) </title></a>
+<a xlink:href='#reg_enrollments.id_student'><text id='upl_standard.reg_enrollments.id_student' x='303' y='306' onmouseover="hghl(['reg_enrollments_fk_ret_enrollments_'])" onmouseout="uhghl(['reg_enrollments_fk_ret_enrollments_'])">id_student</text><title>id_student
+* int</title></a>
+<a xlink:href='#reg_enrollments.id_student'><use id='fk' x='394' y='296' xlink:href='#fk'/><title>References upl_students ( id_student -&gt; id_code ) </title></a>
+  <use id='nn' x='287' y='312' xlink:href='#nn'/><a xlink:href='#reg_enrollments.id_campus'><use id='unq' x='287' y='311' xlink:href='#unq'/><title>Unq uq_reg_enrollments ( id_student, id_campus, id_academicPeriod ) idx_ret_registration_data_ ( id_campus ) </title></a>
+<a xlink:href='#reg_enrollments.id_campus'><text id='upl_standard.reg_enrollments.id_campus' x='303' y='321' onmouseover="hghl(['reg_enrollments_fk_ret_registration_data_'])" onmouseout="uhghl(['reg_enrollments_fk_ret_registration_data_'])">id_campus</text><title>id_campus
+* int</title></a>
+<a xlink:href='#reg_enrollments.id_campus'><use id='fk' x='394' y='311' xlink:href='#fk'/><title>References upl_campuses ( id_campus -&gt; id_code ) </title></a>
+  <use id='nn' x='287' y='327' xlink:href='#nn'/><a xlink:href='#reg_enrollments.id_academicPeriod'><use id='unq' x='287' y='326' xlink:href='#unq'/><title>Unq uq_reg_enrollments ( id_student, id_campus, id_academicPeriod ) idx_ret_enrollments_0_ ( id_academicPeriod ) </title></a>
+<a xlink:href='#reg_enrollments.id_academicPeriod'><text id='upl_standard.reg_enrollments.id_academicPeriod' x='303' y='336' onmouseover="hghl(['reg_enrollments_fk_ret_enrollments_0_'])" onmouseout="uhghl(['reg_enrollments_fk_ret_enrollments_0_'])">id_academicPeriod</text><title>id_academicPeriod
+* int</title></a>
+<a xlink:href='#reg_enrollments.id_academicPeriod'><use id='fk' x='394' y='326' xlink:href='#fk'/><title>References upl_academicperiods ( id_academicPeriod -&gt; id_code ) </title></a>
+  <a xlink:href='#reg_enrollments.id_course'><use id='idx' x='287' y='341' xlink:href='#idx'/><title>idx_ret_enrollments_2_ ( id_course ) </title></a>
+<a xlink:href='#reg_enrollments.id_course'><text id='upl_standard.reg_enrollments.id_course' x='303' y='351' onmouseover="hghl(['reg_enrollments_fk_ret_enrollments_2_'])" onmouseout="uhghl(['reg_enrollments_fk_ret_enrollments_2_'])">id_course</text><title>id_course
+int</title></a>
+<a xlink:href='#reg_enrollments.id_course'><use id='fk' x='394' y='341' xlink:href='#fk'/><title>References upl_courses ( id_course -&gt; id_code ) </title></a>
+  <use id='nn' x='287' y='357' xlink:href='#nn'/><a xlink:href='#reg_enrollments.id_status'><use id='idx' x='287' y='356' xlink:href='#idx'/><title>Idx_reg_enrollments_id_enrollment_status_ ( id_status ) </title></a>
+<a xlink:href='#reg_enrollments.id_status'><text id='upl_standard.reg_enrollments.id_status' x='303' y='366' onmouseover="hghl(['upl_enrollment_statuses_fk_upl_enrollment_statuses'])" onmouseout="uhghl(['upl_enrollment_statuses_fk_upl_enrollment_statuses'])">id_status</text><title>id_status
+* int default 3</title></a>
+<a xlink:href='#reg_enrollments.id_status'><use id='ref' x='394' y='356' xlink:href='#ref'/><title>Referred by upl_enrollment_statuses ( id_code -&gt; id_status ) </title></a>
+  <a xlink:href='#reg_enrollments.ds_finalScore'><text id='upl_standard.reg_enrollments.ds_finalScore' x='303' y='381'>ds_finalScore</text><title>ds_finalScore
+varchar(5)</title></a>
+  <use id='nn' x='287' y='387' xlink:href='#nn'/><a xlink:href='#reg_enrollments.is_active'><text id='upl_standard.reg_enrollments.is_active' x='303' y='396'>is_active</text><title>is_active
+* tinyint default 1</title></a>
+
+<!-- ============= Table 'upl_enrollment_statuses' ============= -->
+<rect class='table' x='285' y='488' width='135' height='135' rx='7' ry='7' style='stroke:none'/>
+<path d='M 285.00 514.00 L 285.00 495.00 Q 285.00 488.00 292.00 488.00 L 413.00 488.00 Q 420.00 488.00 420.00 495.00 L 420.00 514.00 L285.00 514.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='285' y='488' width='135' height='135' rx='7' ry='7' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='285.000000' y1='514.000000' x2='420.000000' y2='514.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='300.000000' y1='514.000000' x2='300.000000' y2='623.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='409.000000' y1='514.000000' x2='409.000000' y2='623.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#upl_enrollment_statuses'><text x='291' y='506'>upl_enrollment_statuses</text><title>Table upl_standard.upl_enrollment_statuses</title></a>
+  <use id='nn' x='287' y='522' xlink:href='#nn'/><a xlink:href='#upl_enrollment_statuses.id_code'><use id='pk' x='287' y='521' xlink:href='#pk'/><title>Pk pk_upl_enrollment_statuses ( id_code ) </title></a>
+<a xlink:href='#upl_enrollment_statuses.id_code'><text id='upl_standard.upl_enrollment_statuses.id_code' x='303' y='531' onmouseover="hghl(['upl_enrollment_statuses_fk_upl_enrollment_statuses','enr_pensum_progress_Fk_enr_pensum_progress_upl_enrollment_statuses'])" onmouseout="uhghl(['upl_enrollment_statuses_fk_upl_enrollment_statuses','enr_pensum_progress_Fk_enr_pensum_progress_upl_enrollment_statuses'])">id_code</text><title>id_code
+* int</title></a>
+<a xlink:href='#upl_enrollment_statuses.id_code'><use id='fk' x='409' y='521' xlink:href='#fk'/><title>References reg_enrollments ( id_code -&gt; id_status ) 
+Referred by enr_pensum_progress ( id_enrollment_status -&gt; id_code ) </title></a>
+  <a xlink:href='#upl_enrollment_statuses.ds_name'><text id='upl_standard.upl_enrollment_statuses.ds_name' x='303' y='546'>ds_name</text><title>ds_name
+varchar(100)</title></a>
+  <a xlink:href='#upl_enrollment_statuses.ds_integrationId'><text id='upl_standard.upl_enrollment_statuses.ds_integrationId' x='303' y='561'>ds_integrationId</text><title>ds_integrationId
+varchar(100)</title></a>
+  <a xlink:href='#upl_enrollment_statuses.ds_description'><text id='upl_standard.upl_enrollment_statuses.ds_description' x='303' y='576'>ds_description</text><title>ds_description
+varchar(255)</title></a>
+  <use id='nn' x='287' y='582' xlink:href='#nn'/><a xlink:href='#upl_enrollment_statuses.is_approved'><text id='upl_standard.upl_enrollment_statuses.is_approved' x='303' y='591'>is_approved</text><title>is_approved
+* tinyint default 0</title></a>
+  <use id='nn' x='287' y='597' xlink:href='#nn'/><a xlink:href='#upl_enrollment_statuses.is_active'><text id='upl_standard.upl_enrollment_statuses.is_active' x='303' y='606'>is_active</text><title>is_active
+* tinyint default 1</title></a>
+
+<!-- ============= Table 'upl_academicperiods' ============= -->
+<rect class='table' x='45' y='248' width='150' height='180' rx='7' ry='7' style='stroke:none'/>
+<path d='M 45.00 274.00 L 45.00 255.00 Q 45.00 248.00 52.00 248.00 L 188.00 248.00 Q 195.00 248.00 195.00 255.00 L 195.00 274.00 L45.00 274.00 ' style='fill:url(#tbg_c1d8ee);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='45' y='248' width='150' height='180' rx='7' ry='7' style='fill:none;stroke:#aeb7bf'/>
+<line class='delim' x1='45.000000' y1='274.000000' x2='195.000000' y2='274.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='60.000000' y1='274.000000' x2='60.000000' y2='428.000000' style='stroke:#aeb7bf'/>
+<line class='delim' x1='184.000000' y1='274.000000' x2='184.000000' y2='428.000000' style='stroke:#aeb7bf'/>
+<a xlink:href='#upl_academicperiods'><text x='67' y='266'>upl_academicperiods</text><title>Table upl_standard.upl_academicperiods</title></a>
+  <use id='nn' x='47' y='282' xlink:href='#nn'/><a xlink:href='#upl_academicperiods.id_code'><use id='unq' x='47' y='281' xlink:href='#unq'/><title>Unq pk_upl_academicperiods ( id_code ) </title></a>
+<a xlink:href='#upl_academicperiods.id_code'><text id='upl_standard.upl_academicperiods.id_code' x='63' y='291' onmouseover="hghl(['bkg_softwarelicenses_courses_Fk_bkg_softwareLicenses_courses_upl_academicperiods','enr_correction_requests_Fk_enr_correction_requests_upl_academicperiods','enr_optimal_comments_Fk_enr_optimal_comments_upl_academicperiods','enr_pensum_progress_Fk_enr_pensum_progress_upl_academicperiods','enr_student_indicators_fk_enr_student_indicators_id_academicPeriod','imp_course_evaluationcomponents_fk_imp_course_evaluationcomponents_05','imp_pensum_improvementactions_fk_imp_pensum_improvementactions_id_academic_period','imp_section_evaluationcomponents_fk_imp_section_evaluationcomponents_09','reg_enrollments_fk_ret_enrollments_0_','reg_equivalentcourses_fk_reg_equivalentourses_0','reg_recognitions_fk_ret_convalidaciones_0_','reg_specialstudents_fk_reg_specialStudents_1','reg_student_pensums_Fk_reg_student_pensums_upl_academicperiods','ret_careerfunds_fk_ret_careerFunds_0','ret_extraacademicinformation_Fk_ret_extraacademicinformation_upl_academicperiods','ret_familydata_Fk_ret_familydata_upl_academicperiods_','ret_inst_submodels_Fk_ret_inst_submodel_names_upl_academicperiods','ret_institutional_categorical_factors_fk_id_academicPeriod','ret_institutional_indicator_values_ret_institutional_indicator_values_ibfk_3','ret_institutional_numerical_factors_fk_academicPeriod','ret_payments_Fk_ret_payments_upl_academicperiods_','ret_surveys_Fk_ret_surveys_upl_academicperiods','ret_temporalconditions_fk_ret_temporalConditions_0','upl_approvalrate_fk_upl_approvalrate_0','upl_campus_academicperiod_shift_FK_UPL_campus_academicPeriod_shift_id_AP','upl_crossedlists_fk_upl_crossedlist_upl_academicperiods','upl_desertionrate_fk_upl_desertionrate_0','upl_forecast_crossedlistdetail_fk_upl_forecast_crossedlistdetail_1','upl_forecast_mainlistdetail_fk_upl_forecast_crossedlistdetail_11_','upl_pensum_progress_upl_pensum_progress_ibfk_1_','upl_schedulerange_Fk_upl_schedulerange_upl_academicperiods','upl_simulation_demmand_campuses_academicperiods_shifts_fk_upl_simulation_demmand_cpj_upl_acadPeriod'])" onmouseout="uhghl(['bkg_softwarelicenses_courses_Fk_bkg_softwareLicenses_courses_upl_academicperiods','enr_correction_requests_Fk_enr_correction_requests_upl_academicperiods','enr_optimal_comments_Fk_enr_optimal_comments_upl_academicperiods','enr_pensum_progress_Fk_enr_pensum_progress_upl_academicperiods','enr_student_indicators_fk_enr_student_indicators_id_academicPeriod','imp_course_evaluationcomponents_fk_imp_course_evaluationcomponents_05','imp_pensum_improvementactions_fk_imp_pensum_improvementactions_id_academic_period','imp_section_evaluationcomponents_fk_imp_section_evaluationcomponents_09','reg_enrollments_fk_ret_enrollments_0_','reg_equivalentcourses_fk_reg_equivalentourses_0','reg_recognitions_fk_ret_convalidaciones_0_','reg_specialstudents_fk_reg_specialStudents_1','reg_student_pensums_Fk_reg_student_pensums_upl_academicperiods','ret_careerfunds_fk_ret_careerFunds_0','ret_extraacademicinformation_Fk_ret_extraacademicinformation_upl_academicperiods','ret_familydata_Fk_ret_familydata_upl_academicperiods_','ret_inst_submodels_Fk_ret_inst_submodel_names_upl_academicperiods','ret_institutional_categorical_factors_fk_id_academicPeriod','ret_institutional_indicator_values_ret_institutional_indicator_values_ibfk_3','ret_institutional_numerical_factors_fk_academicPeriod','ret_payments_Fk_ret_payments_upl_academicperiods_','ret_surveys_Fk_ret_surveys_upl_academicperiods','ret_temporalconditions_fk_ret_temporalConditions_0','upl_approvalrate_fk_upl_approvalrate_0','upl_campus_academicperiod_shift_FK_UPL_campus_academicPeriod_shift_id_AP','upl_crossedlists_fk_upl_crossedlist_upl_academicperiods','upl_desertionrate_fk_upl_desertionrate_0','upl_forecast_crossedlistdetail_fk_upl_forecast_crossedlistdetail_1','upl_forecast_mainlistdetail_fk_upl_forecast_crossedlistdetail_11_','upl_pensum_progress_upl_pensum_progress_ibfk_1_','upl_schedulerange_Fk_upl_schedulerange_upl_academicperiods','upl_simulation_demmand_campuses_academicperiods_shifts_fk_upl_simulation_demmand_cpj_upl_acadPeriod'])">id_code</text><title>id_code
+* int</title></a>
+<a xlink:href='#upl_academicperiods.id_code'><use id='ref' x='184' y='281' xlink:href='#ref'/><title>Referred by bkg_softwarelicenses_courses ( id_academicPeriod -&gt; id_code ) 
+Referred by enr_correction_requests ( id_academicperiod_request -&gt; id_code ) 
+Referred by enr_optimal_comments ( id_academicperiod -&gt; id_code ) 
+Referred by enr_pensum_progress ( id_academic_period -&gt; id_code ) 
+Referred by enr_student_indicators ( id_academicPeriod -&gt; id_code ) 
+Referred by imp_course_evaluationcomponents ( id_academicperiod -&gt; id_code ) 
+Referred by imp_pensum_improvementactions ( id_academic_period -&gt; id_code ) 
+Referred by imp_section_evaluationcomponents ( id_academicperiod -&gt; id_code ) 
+Referred by reg_enrollments ( id_academicPeriod -&gt; id_code ) 
+Referred by reg_equivalentcourses ( id_academicPeriod -&gt; id_code ) 
+Referred by reg_recognitions ( id_academicPeriod -&gt; id_code ) 
+Referred by reg_specialstudents ( id_academicPeriod -&gt; id_code ) 
+Referred by reg_student_pensums ( id_academic_period_start -&gt; id_code ) 
+Referred by ret_careerfunds ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_extraacademicinformation ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_familydata ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_inst_submodels ( id_academic_period -&gt; id_code ) 
+Referred by ret_institutional_categorical_factors ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_institutional_indicator_values ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_institutional_numerical_factors ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_payments ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_surveys ( id_academicPeriod -&gt; id_code ) 
+Referred by ret_temporalconditions ( id_academicPeriod -&gt; id_code ) 
+Referred by upl_approvalrate ( id_academicPeriod -&gt; id_code ) 
+Referred by upl_campus_academicperiod_shift ( id_academicPeriod -&gt; id_code ) 
+Referred by upl_crossedlists ( id_period -&gt; id_code ) 
+Referred by upl_desertionrate ( id_academicPeriod -&gt; id_code ) 
+Referred by upl_forecast_crossedlistdetail ( id_period -&gt; id_code ) 
+Referred by upl_forecast_mainlistdetail ( id_period -&gt; id_code ) 
+Referred by upl_pensum_progress ( id_academic_period -&gt; id_code ) 
+Referred by upl_schedulerange ( id_academicPeriod -&gt; id_code ) 
+Referred by upl_simulation_demmand_campuses_academicperiods_shifts ( id_academicPeriod -&gt; id_code ) </title></a>
+  <use id='nn' x='47' y='297' xlink:href='#nn'/><a xlink:href='#upl_academicperiods.ds_name'><text id='upl_standard.upl_academicperiods.ds_name' x='63' y='306'>ds_name</text><title>ds_name
+* varchar(200)</title></a>
+  <a xlink:href='#upl_academicperiods.ds_academicPeriodType'><text id='upl_standard.upl_academicperiods.ds_academicPeriodType' x='63' y='321'>ds_academicPeriodType</text><title>ds_academicPeriodType
+varchar(200)</title></a>
+  <a xlink:href='#upl_academicperiods.nm_year'><text id='upl_standard.upl_academicperiods.nm_year' x='63' y='336'>nm_year</text><title>nm_year
+int</title></a>
+  <a xlink:href='#upl_academicperiods.nm_periodNumber'><text id='upl_standard.upl_academicperiods.nm_periodNumber' x='63' y='351'>nm_periodNumber</text><title>nm_periodNumber
+int</title></a>
+  <a xlink:href='#upl_academicperiods.dt_start_date'><text id='upl_standard.upl_academicperiods.dt_start_date' x='63' y='366'>dt_start_date</text><title>dt_start_date
+date</title></a>
+  <a xlink:href='#upl_academicperiods.dt_end_date'><text id='upl_standard.upl_academicperiods.dt_end_date' x='63' y='381'>dt_end_date</text><title>dt_end_date
+date</title></a>
+  <use id='nn' x='47' y='387' xlink:href='#nn'/><a xlink:href='#upl_academicperiods.ds_integrationId'><use id='unq' x='47' y='386' xlink:href='#unq'/><title>Unq uq_upl_academicperiods ( ds_integrationId ) </title></a>
+<a xlink:href='#upl_academicperiods.ds_integrationId'><text id='upl_standard.upl_academicperiods.ds_integrationId' x='63' y='396'>ds_integrationId</text><title>ds_integrationId
+* varchar(100) default '1'</title></a>
+  <use id='nn' x='47' y='402' xlink:href='#nn'/><a xlink:href='#upl_academicperiods.is_active'><text id='upl_standard.upl_academicperiods.is_active' x='63' y='411'>is_active</text><title>is_active
+* tinyint default 1</title></a>
+
+</g></svg></div>
+
+
+<p align='right'><a href='http://www.dbschema.com' style='color:#aaa'>Powered by DbSchema</a></p></body></html>
