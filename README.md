@@ -1,29 +1,21 @@
-# README #
+# Prácticas uPlanner Verano 2022 #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+¿Quieres realizar tu práctica en una startup de EdTech? ¿Tienes las habilidades necesarias para ayudarnos a cambiar la educación? 
 
-### What is this repository for? ###
+Resuelve uno de nuestros desafíos para ser practicante en el equipo de Data Science de uPlanner.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Envíanos un correo a data.science@uplanner.com con los siguientes datos:
 
-### How do I get set up? ###
+* Nombre y datos de contacto
+* CV corto (1 hoja)
+* Intereses y habilidades
+* ¿Qué quieres cambiar de la educación?
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Incluye en tu correo la respuesta a alguno de los desafíos, indicando tu razonamiento, o realiza un pull request al repositorio de desafíos: https://bitbucket.org/uplanner/desafios_practicas_2022
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Preguntas comunes:
+* ¿Necesito estar en último año? No.
+* ¿Necesito saber programar? Sí.
+* ¿Trabajo remoto? Sí
+* ¿Inicio de la práctica? 10 enero 2021.
+* ¿Duración mínima práctica? 8 semanas (hasta el 05 Marzo 2021).
