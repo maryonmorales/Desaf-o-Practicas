@@ -14,8 +14,10 @@ Envíanos un correo a data.science@uplanner.com con los siguientes datos:
 Incluye en tu correo la respuesta a alguno de los desafíos, indicando tu razonamiento, o realiza un pull request al repositorio de desafíos: https://bitbucket.org/uplanner/desafios_practicas_2022
 
 Preguntas comunes:
+
 * ¿Necesito estar en último año? No.
 * ¿Necesito saber programar? Sí.
 * ¿Trabajo remoto? Sí
 * ¿Inicio de la práctica? 10 enero 2021.
 * ¿Duración mínima práctica? 8 semanas (hasta el 05 Marzo 2021).
+
